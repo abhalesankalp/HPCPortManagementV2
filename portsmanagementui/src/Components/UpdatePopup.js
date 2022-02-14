@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import {
     TextField,
-    Tooltip,
     Button
 } from '@material-ui/core';
 import { UpdateShips } from "../ReactAPI/ManageApi.js";
@@ -14,13 +13,13 @@ function UpdatePopup(props) {
     const [la, setLA] = useState(props.currentShip[0]?.la);
     const [lo, setLo] = useState(props.currentShip[0]?.lo);
     const [location, setLocation] = useState(props.currentShip[0]?.location);
-    const [isUpdateClicked, setIsUPdateClick] = useState(false);
+    const [isUpdateClicked, setIsUpdateClick] = useState(false);
     function handleSubmit() {
-        setIsUPdateClick(true);
+        setIsUpdateClick(true);
         if (name && length && width && la && lo && location)
         {
             var ship = {};
-            if (id != 0)
+            if (id !== 0)
             {
                 ship.ShipId = id;
             }

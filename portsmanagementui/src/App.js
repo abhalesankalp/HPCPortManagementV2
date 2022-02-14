@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import ShipManagement from './Components/ShipManagement';
 import { useEffect } from 'react';
