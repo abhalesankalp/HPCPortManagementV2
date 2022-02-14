@@ -17,7 +17,7 @@ function UpdatePopup(props) {
     const [isUpdateClicked, setIsUPdateClick] = useState(false);
     function handleSubmit() {
         setIsUPdateClick(true);
-        if (name && length && width && la  && lo )
+        if (name && length && width && la && lo && location)
         {
             var ship = {};
             if (id != 0)
