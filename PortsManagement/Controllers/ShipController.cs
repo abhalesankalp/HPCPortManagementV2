@@ -16,7 +16,10 @@ namespace PortsManagement.Controllers
         public IActionResult Get(int id)
         {
             List<Ship> ships = Ship.GetShips();
-            return Ok(ships.Where(x => x.ShipId == id));
+            if (ships.Any(x => x.ShipId == id))
+                return Ok(ships.Where(x => x.ShipId == id));
+            else
+                return NotFound($"record not present with id {id}");
         }
 
         [Route("Ship/Get")]
@@ -32,8 +35,10 @@ namespace PortsManagement.Controllers
         [HttpPost]
         public IActionResult Save(Ship ship)
         {
-            Ship.Save(ship);
-            return Ok("Record added successfully");
+            if (Ship.Save(ship))
+                return Ok("Record added successfully");
+            else
+                return BadRequest("Please provide all parameters correctly!");
         }
 
         [Route("Ship/Delete/{Id}")]
@@ -43,7 +48,7 @@ namespace PortsManagement.Controllers
             var result = Ship.Delete(Id);
             if (!result)
             {
-                return NotFound();
+                return NotFound($"Records not present with id : {Id}");
             }
             else
             {

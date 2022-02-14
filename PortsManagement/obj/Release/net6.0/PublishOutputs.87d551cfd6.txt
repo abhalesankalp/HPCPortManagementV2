@@ -1,0 +1,13 @@
+C:\HPCPortManagement\HPCPortManagementV2\PortsManagement\obj\Release\net6.0\PubTmp\Out\PortsManagement.exe
+C:\HPCPortManagement\HPCPortManagementV2\PortsManagement\obj\Release\net6.0\PubTmp\Out\appsettings.Development.json
+C:\HPCPortManagement\HPCPortManagementV2\PortsManagement\obj\Release\net6.0\PubTmp\Out\appsettings.json
+C:\HPCPortManagement\HPCPortManagementV2\PortsManagement\obj\Release\net6.0\PubTmp\Out\Data\Result.json
+C:\HPCPortManagement\HPCPortManagementV2\PortsManagement\obj\Release\net6.0\PubTmp\Out\PortsManagement.dll
+C:\HPCPortManagement\HPCPortManagementV2\PortsManagement\obj\Release\net6.0\PubTmp\Out\PortsManagement.deps.json
+C:\HPCPortManagement\HPCPortManagementV2\PortsManagement\obj\Release\net6.0\PubTmp\Out\PortsManagement.runtimeconfig.json
+C:\HPCPortManagement\HPCPortManagementV2\PortsManagement\obj\Release\net6.0\PubTmp\Out\PortsManagement.pdb
+C:\HPCPortManagement\HPCPortManagementV2\PortsManagement\obj\Release\net6.0\PubTmp\Out\Microsoft.OpenApi.dll
+C:\HPCPortManagement\HPCPortManagementV2\PortsManagement\obj\Release\net6.0\PubTmp\Out\Newtonsoft.Json.dll
+C:\HPCPortManagement\HPCPortManagementV2\PortsManagement\obj\Release\net6.0\PubTmp\Out\Swashbuckle.AspNetCore.Swagger.dll
+C:\HPCPortManagement\HPCPortManagementV2\PortsManagement\obj\Release\net6.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\HPCPortManagement\HPCPortManagementV2\PortsManagement\obj\Release\net6.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerUI.dll

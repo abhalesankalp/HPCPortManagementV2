@@ -17,7 +17,6 @@ function ShipMap(props) {
     }
 
     useEffect(() => {
-        debugger;
         axios.get(`${serverURL}/Ship/Get`)
             .then(res => {
                 var result = res.data;
@@ -36,7 +35,7 @@ function ShipMap(props) {
                 yesIWantToUseGoogleMapApiInternals>
 
                 {ships.map((item, index) => (
-                    <AnyReactComponent
+                    <AnyReactComponent key={item.shipId}
                         lat={item.la}
                         lng={item.lo}
                         text="My Marker"

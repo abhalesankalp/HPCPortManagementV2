@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Sankalp.Abhale\\source\\repos\\PortsManagement\\PortsManagement\\PortsManagement.csproj": {}
+    "C:\\HPCPortManagement\\HPCPortManagementV2\\PortsManagement\\PortsManagement.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Sankalp.Abhale\\source\\repos\\PortsManagement\\PortsManagement\\PortsManagement.csproj": {
+    "C:\\HPCPortManagement\\HPCPortManagementV2\\PortsManagement\\PortsManagement.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Sankalp.Abhale\\source\\repos\\PortsManagement\\PortsManagement\\PortsManagement.csproj",
+        "projectUniqueName": "C:\\HPCPortManagement\\HPCPortManagementV2\\PortsManagement\\PortsManagement.csproj",
         "projectName": "PortsManagement",
-        "projectPath": "C:\\Users\\Sankalp.Abhale\\source\\repos\\PortsManagement\\PortsManagement\\PortsManagement.csproj",
+        "projectPath": "C:\\HPCPortManagement\\HPCPortManagementV2\\PortsManagement\\PortsManagement.csproj",
         "packagesPath": "C:\\Users\\Sankalp.Abhale\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Sankalp.Abhale\\source\\repos\\PortsManagement\\PortsManagement\\obj\\",
+        "outputPath": "C:\\HPCPortManagement\\HPCPortManagementV2\\PortsManagement\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Sankalp.Abhale\\AppData\\Roaming\\NuGet\\NuGet.Config",

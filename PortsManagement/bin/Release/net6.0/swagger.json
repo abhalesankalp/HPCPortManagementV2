@@ -1,0 +1,122 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "PortsManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "version": "1.0"
+  },
+  "paths": {
+    "/Ship/Get/{id}": {
+      "get": {
+        "tags": [
+          "Ship"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/Ship/Get": {
+      "get": {
+        "tags": [
+          "Ship"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/Ship/Save": {
+      "post": {
+        "tags": [
+          "Ship"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/Ship"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/Ship/Delete/{Id}": {
+      "delete": {
+        "tags": [
+          "Ship"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "Id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Ship": {
+      "type": "object",
+      "properties": {
+        "shipId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "shipName": {
+          "type": "string"
+        },
+        "location": {
+          "type": "string"
+        },
+        "length": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "width": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "lo": {
+          "format": "float",
+          "type": "number"
+        },
+        "la": {
+          "format": "float",
+          "type": "number"
+        }
+      }
+    }
+  }
+}

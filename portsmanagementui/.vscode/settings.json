@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/e896ef5f-45d8-41b7-a136-90be8ed6ebf5/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/hpcportmanagement",
+    "appService.deploySubpath": "."
+}

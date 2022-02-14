@@ -22,7 +22,6 @@ function SimpleDialog(props) {
     const handleClose = () => {
         onClose(selectedValue);
     };
-    debugger;
     var popupHeader = "A";
     switch (dialogTypeID) {
         case 1: popupHeader = "Create Ship"; break;
@@ -69,7 +68,6 @@ function ShipList(props) {
     const serverURL = process.env.REACT_APP_SERVER_API_URL;
 
     useEffect(() => {
-        debugger;
         axios.get(`${serverURL}/Ship/Get`)
             .then(res => {
                 var result = res.data;
@@ -86,7 +84,6 @@ function ShipList(props) {
         setcurrentShipID(shipID);
         var ship = ships.filter(x => x.shipId == shipID);
         setcurrentShip(ship);
-        debugger;
         console.log(currentShip);
         setOpen(true);
     };

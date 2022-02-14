@@ -32,8 +32,13 @@ namespace PortsManagement
             return jsonString;
         }
 
-        public static void Save(Ship ship)
+        public static bool Save(Ship ship)
         {
+            if (string.IsNullOrEmpty(ship.ShipName) || ship.LA == 0 || ship.Lo == 0 || string.IsNullOrEmpty(ship.Location) || ship.Width==0 || ship.Length==0)
+            {
+                return false;
+            }
+
             string jsonString = GetCurrentData();
             if (string.IsNullOrEmpty(jsonString))
             {
@@ -52,6 +57,8 @@ namespace PortsManagement
                 ships.Add(ship);
                 System.IO.File.WriteAllText(@"Data/Result.json", JsonSerializer.Serialize(ships));
             }
+
+            return true;
         }
 
         public static bool Delete(int id)
@@ -61,8 +68,20 @@ namespace PortsManagement
             {
                 return false;
             }
-           
-            return true;
+            else
+            {
+                List<Ship> ships = JsonSerializer.Deserialize<List<Ship>>(jsonString) ?? new List<Ship>();
+                if (ships.Any(x => x.ShipId == id))
+                {
+                    ships = ships.Where(x => x.ShipId != id).ToList();
+                    System.IO.File.WriteAllText(@"Data/Result.json", JsonSerializer.Serialize(ships));
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
            
         }
 
