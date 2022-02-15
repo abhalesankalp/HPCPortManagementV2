@@ -1,11 +1,11 @@
 #A. Access live application
   This application is already deployed on azure and you can easily access it.
          
-  to access app, please visit
+  1. To access app, please visit
 
   https://hpcportmanagementv2.azurewebsites.net/
 
-   to access APIs please visit
+   2. To access APIs please visit
 
    https://portsmanagementapi.azurewebsites.net/swagger/index.html
 
