@@ -51,7 +51,8 @@ HPCPortManagement app is mainly use to Create/Edit/Delete new ships. along with 
 
 #C. Google Map integration
    1. I have integrated google map with app, on which you can see your sheep location based on coordinates provided by you.
- 2. At the time of loading this application you will see one error on google map **`This page can't load Google Maps correctly.`**. you have to just click on and ignore this error. it will appear only first time after loading. this is because I am currently using free API version of google maps.
+   2. At the time of loading this application you will see one error on google map **`This page can't load Google Maps correctly.`**. 
+   3. You have to just click on Ok and ignore this error. It will appear only first time after loading. That is because I am currently using free API version of google maps.
       
  
  
