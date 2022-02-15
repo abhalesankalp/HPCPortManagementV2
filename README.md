@@ -27,7 +27,7 @@ HPCPortManagement app is mainly use to Create/Edit/Delete new ships. along with 
     3. After that set the` PortManagement` project as the startup project and run the application
     4. This will run your API application, which you can check on this localhost link
       
-           `https://localhost:7168/swagger/index.html` 
+           https://localhost:7168/swagger/index.html 
 
     5. You can also test APIs on this link. 
     6. Another way to run the API .net core application is through a command prompt
