@@ -1,5 +1,5 @@
-#A. Access live application
-  This application is already deployed on azure and you can easily access it.
+#A. Access live application <br/>
+   This application is already deployed on azure and you can easily access it.
          
   1. To access app, please visit
 
@@ -22,8 +22,8 @@
 3. **Steps to run the API application** 
     1. There are 2 ways to run API applications
     2. The first one is if you have a visual studio installed on your machine then just open the `.sln` file which will load solution in your Visual Studio.
-   3. After that set the` PortManagement` project as the startup project and run the application
-   4. This will run your API application, which you can check on this localhost link
+    3. After that set the` PortManagement` project as the startup project and run the application
+    4. This will run your API application, which you can check on this localhost link
       
            `https://localhost:7168/swagger/index.html` 
 
