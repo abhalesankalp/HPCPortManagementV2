@@ -7,12 +7,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+    <Compile Remove="Domain\Interface\**" />
+    <Content Remove="Domain\Interface\**" />
+    <EmbeddedResource Remove="Domain\Interface\**" />
+    <None Remove="Domain\Interface\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Domain\Interface\" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
   </ItemGroup>
 
 </Project>

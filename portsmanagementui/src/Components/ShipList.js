@@ -46,14 +46,6 @@ function SimpleDialog(props) {
                     dialogTypeID != 3 ? <UpdatePopup dialogTypeID={dialogTypeID} currentShip={currentShip} shipId={currentShipID} onClose={handleClose} /> : <DeletePopup shipId={currentShipID} />
                 }
             </DialogContentText>
-            {/*<DialogActions>*/}
-            {/*    <Button onClick={handleClose} color="primary">*/}
-            {/*        Cancel*/}
-            {/*    </Button>*/}
-            {/*    <Button onClick={handleClose} color="primary">*/}
-            {/*        {dialogTypeID != 3 ? (dialogTypeID ==1? "Add" : "Update" ) : "Delete"}*/}
-            {/*    </Button>*/}
-            {/*</DialogActions>*/}
         </Dialog>
     );
 }
@@ -65,7 +57,7 @@ function ShipList(props) {
     const [currentShipID, setcurrentShipID] = React.useState(0);
     const [currentShip, setcurrentShip] = React.useState(0);
     const [ships, setShips] = useState([]);
-    const serverURL = process.env.REACT_APP_SERVER_API_URL;
+    const serverURL = process.env.REACT_APP_Env == "prod" ? process.env.REACT_APP_SERVER_API_URL : process.env.REACT_APP_SERVER_API_URL_Dev;
 
     useEffect(() => {
         axios.get(`${serverURL}/Ship/Get`)

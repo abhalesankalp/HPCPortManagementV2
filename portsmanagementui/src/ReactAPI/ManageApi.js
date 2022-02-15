@@ -1,7 +1,7 @@
 import axios from 'axios';
 //require('dotenv').config();
 
-const serverURL = process.env.REACT_APP_SERVER_API_URL;
+const serverURL = process.env.REACT_APP_Env == "prod" ? process.env.REACT_APP_SERVER_API_URL : process.env.REACT_APP_SERVER_API_URL_Dev;
 
 export function GetShip(id) {
     console.log(serverURL);

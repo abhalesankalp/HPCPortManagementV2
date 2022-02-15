@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import GoogleMapReact from 'google-map-react';
 import axios from 'axios';
 
-const serverURL = process.env.REACT_APP_SERVER_API_URL;
+const serverURL = process.env.REACT_APP_Env == "prod" ? process.env.REACT_APP_SERVER_API_URL : process.env.REACT_APP_SERVER_API_URL_Dev;
 
 
 function ShipMap(props) {
