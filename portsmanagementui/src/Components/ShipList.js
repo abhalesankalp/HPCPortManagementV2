@@ -64,7 +64,6 @@ function ShipList(props) {
             .then(res => {
                 var result = res.data;
                 setShips(result);
-                debugger;
             })
     }, []);
 
