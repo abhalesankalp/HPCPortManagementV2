@@ -2,6 +2,10 @@
   This application is already deployed on azure and you can easily access it on this URL
 
   https://hpcportmanagementv2.azurewebsites.net/
+  
+  to access APIs please visit
+  
+  https://portsmanagementapi.azurewebsites.net/swagger/index.html
 
 #B. To run it locally
    1. To run this application on your local machine you must clone the following repository.
