@@ -1,6 +1,8 @@
 #A. Access live application
-  This application is already deployed on azure and you can easily access it on this URL
-
+  This application is already deployed on azure and you can easily access it.
+         
+          to access app, please visit
+          
           https://hpcportmanagementv2.azurewebsites.net/
   
            to access APIs please visit
