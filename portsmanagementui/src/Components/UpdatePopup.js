@@ -12,11 +12,18 @@ function UpdatePopup(props) {
     const [width, setWidth] = useState(props.currentShip[0]?.width);
     const [la, setLA] = useState(props.currentShip[0]?.la);
     const [lo, setLo] = useState(props.currentShip[0]?.lo);
-    const [location, setLocation] = useState(props.currentShip[0]?.location);
+    const [code, setcode] = useState(props.currentShip[0]?.code);
     const [isUpdateClicked, setIsUpdateClick] = useState(false);
+
+    function IsCodePatternMatching(code)
+    {
+        let regex = /^[a-zA-Z][a-zA-Z][a-zA-Z][a-zA-Z]-\d\d\d\d-[a-zA-Z]\d$/gm;
+        return regex.test(code);
+    }
+
     function handleSubmit() {
         setIsUpdateClick(true);
-        if (name && length && width && la && lo && location)
+        if (name && length && width && la && lo && code && IsCodePatternMatching(code))
         {
             var ship = {};
             if (id !== 0)
@@ -28,7 +35,7 @@ function UpdatePopup(props) {
             ship.Width = parseInt(width);
             ship.La = parseFloat(la);
             ship.Lo = parseFloat(lo);
-            ship.location = location;
+            ship.code = code;
             console.log(ship);
             UpdateShips(ship);
             props.onClose();
@@ -42,7 +49,7 @@ function UpdatePopup(props) {
                 <div className="formName formcss">
                     <label className="titlecss">Name</label><br />
                     <TextField id="standard-basic" className="shipName" type="text" value={name} onChange={event => setName(event.target.value)} label="Name" variant="standard" size="small" required error={!name && isUpdateClicked} /><br />
-                    <TextField id="standard-basic" className="shipLocatoin" type="text" value={location} onChange={event => setLocation(event.target.value)} label="Location" variant="standard" size="small" required error={ !location  && isUpdateClicked} />
+                    <TextField id="standard-basic" className="shipLocatoin" type="text" value={code} onChange={event => setcode(event.target.value)} label="Code" variant="standard" size="small" required error={(!code || !IsCodePatternMatching(code)) && isUpdateClicked} />
                 </div>
                 <div className="Dimension formcss">
                     <label className="titlecss">Dimension</label><br />

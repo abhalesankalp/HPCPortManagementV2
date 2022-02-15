@@ -1,4 +1,5 @@
 using System.Text.Json;
+using System.Text.RegularExpressions;
 
 namespace PortsManagement
 {
@@ -7,15 +8,12 @@ namespace PortsManagement
     {
         public int ShipId { get; set; }
         public string? ShipName { get; set; }
-        public string? Location { get; set; }
+        public string? Code { get; set; }
         public int Length { get; set; }
         public int Width { get; set; }
         public float Lo { get; set; }
         public float LA { get; set; }
 
-        public Ship()
-        {
-        }
 
         public static List<Ship> GetShips()
         {
@@ -34,7 +32,8 @@ namespace PortsManagement
 
         public static bool Save(Ship ship)
         {
-            if (string.IsNullOrEmpty(ship.ShipName) || ship.LA == 0 || ship.Lo == 0 || string.IsNullOrEmpty(ship.Location) || ship.Width==0 || ship.Length==0)
+            Regex rx = new Regex("^[a-zA-Z][a-zA-Z][a-zA-Z][a-zA-Z]-\\d\\d\\d\\d-[a-zA-Z]\\d$", RegexOptions.Compiled | RegexOptions.IgnoreCase);
+            if (string.IsNullOrEmpty(ship.ShipName) || ship.LA == 0 || ship.Lo == 0 || string.IsNullOrEmpty(ship.Code) || ship.Width==0 || ship.Length==0 || !rx.IsMatch(ship.Code))
             {
                 return false;
             }

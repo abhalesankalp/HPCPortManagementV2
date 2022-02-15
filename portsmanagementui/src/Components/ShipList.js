@@ -64,6 +64,7 @@ function ShipList(props) {
             .then(res => {
                 var result = res.data;
                 setShips(result);
+                debugger;
             })
     }, []);
 
@@ -115,7 +116,7 @@ function ShipList(props) {
                                                     {item.shipName}
                                                 </div>
                                                 <div className="text-black-50 d-block">
-                                                    {item.location}
+                                                    {item.code}
                                                 </div>
                                             </div>
                                         </td>
