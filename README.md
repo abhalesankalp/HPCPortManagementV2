@@ -1,3 +1,5 @@
+HPCPortManagement app is mainly use to Create/Edit/Delete new ships. along with that you can locate your ship on map based on credentials you have provided!
+
 #A. Access live application <br/>
    This application is already deployed on azure and you can easily access it.
          
