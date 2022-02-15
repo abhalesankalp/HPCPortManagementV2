@@ -3,11 +3,11 @@
          
   1. To access app, please visit
 
-  https://hpcportmanagementv2.azurewebsites.net/
+    https://hpcportmanagementv2.azurewebsites.net/
 
    2. To access APIs please visit
 
-   https://portsmanagementapi.azurewebsites.net/swagger/index.html
+    https://portsmanagementapi.azurewebsites.net/swagger/index.html
 
 #B. To run it locally
    1. To run this application on your local machine you must clone the following repository.
