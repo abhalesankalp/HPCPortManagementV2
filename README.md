@@ -1,7 +1,13 @@
-#A. Access live application
-  This application is already deployed on azure and you can easily access it on this URL
+#A. Access live application <br/>
+   This application is already deployed on azure and you can easily access it.
+         
+  1. To access app, please visit
 
-  https://hpcportmanagementv2.azurewebsites.net/
+    https://hpcportmanagementv2.azurewebsites.net/
+
+   2. To access APIs please visit
+
+    https://portsmanagementapi.azurewebsites.net/swagger/index.html
 
 #B. To run it locally
    1. To run this application on your local machine you must clone the following repository.
@@ -10,14 +16,14 @@
 
  2. In this repository there are two folders which are as follow
 
-    A. **PortsManagement** => This folder contains API implementation in .net core.
+    A. **PortsManagement** => This folder contains API implementation in .net core. <br/>
     B. **PortsManagementUI** => This folder contains implementation related to UI
 
 3. **Steps to run the API application** 
     1. There are 2 ways to run API applications
     2. The first one is if you have a visual studio installed on your machine then just open the `.sln` file which will load solution in your Visual Studio.
-   3. After that set the` PortManagement` project as the startup project and run the application
-   4. This will run your API application, which you can check on this localhost link
+    3. After that set the` PortManagement` project as the startup project and run the application
+    4. This will run your API application, which you can check on this localhost link
       
            `https://localhost:7168/swagger/index.html` 
 
