@@ -7,7 +7,7 @@ const serverURL = process.env.REACT_APP_Env == "prod" ? process.env.REACT_APP_SE
 
 function ShipMap(props) {
     const [ships, setShips] = useState([]);
-    const AnyReactComponent = ({ text }) => <div className="currentBoat"></div>;
+    const AnyReactComponent = ({ text }) => <div className="currentBoat" title={text}></div>;
     const position = {
         lat: 41.21,
         lng: -71.32
@@ -38,7 +38,7 @@ function ShipMap(props) {
                     <AnyReactComponent key={item.shipId}
                         lat={item.la}
                         lng={item.lo}
-                        text="My Marker"
+                        text={item.shipName}
                     />
                     ))}
             </GoogleMapReact> 
