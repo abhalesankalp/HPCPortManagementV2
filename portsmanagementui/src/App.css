@@ -16,6 +16,10 @@
     background-position: center;
 }
 
+.Notification {
+    margin:14px;
+}
+
 .deletePopupDiv {
     padding: 15px;
     font-size: 24px;
